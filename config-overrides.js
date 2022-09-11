@@ -4,9 +4,9 @@
 //   //do stuff with the webpack config...
 //   return config;
 // }
-const { override, useBabelRc } = require("customize-cra");
+const { override, useBabelRc } = require('customize-cra');
 
 module.exports = override(
-  //eslont
-  useBabelRc()
+    //eslont
+    useBabelRc(),
 );
