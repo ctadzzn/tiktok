@@ -1,8 +1,16 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './page/Home';
+import Following from './page/Following';
 function App() {
     return (
-        <div className="App">
-            <h1>Hello</h1>
-        </div>
+        <Router>
+            <div className="App">
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/following" element={<Following />} />
+                </Routes>
+            </div>
+        </Router>
     );
 }
 
